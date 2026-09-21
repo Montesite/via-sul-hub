@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -7,31 +7,382 @@
     <meta name="description" content="Via Sul Suprimentos - Distribuidora de produtos para Serigrafia e Comunicação Visual. Mais de 15 anos atendendo Santa Maria e todo o Rio Grande do Sul com excelência." />
     <meta name="author" content="Via Sul Suprimentos" />
     <meta name="keywords" content="serigrafia, comunicação visual, silk, signs, suprimentos, Santa Maria, Rio Grande do Sul" />
-    
+
     <!-- Open Graph -->
     <meta property="og:title" content="Via Sul - Suprimentos Silk & Signs" />
     <meta property="og:description" content="Distribuidora de produtos para Serigrafia e Comunicação Visual. Mais de 15 anos de excelência." />
-    <meta property="og:image" content="/logo.png" />
+    <meta property="og:image" content="images/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.viasulsuprimentos.com.br" />
     <meta property="og:locale" content="pt_BR" />
-    
+
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Via Sul - Suprimentos Silk & Signs" />
     <meta name="twitter:description" content="Distribuidora de produtos para Serigrafia e Comunicação Visual." />
-    <meta name="twitter:image" content="/logo.png" />
-    
-    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="twitter:image" content="images/og-image.png" />
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="64x64" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <div id="root"></div>
+    <header class="site-header" id="siteHeader">
+      <div class="container">
+        <div class="nav-row">
+          <a href="#inicio" data-scroll="inicio" class="nav-logo">
+            <img src="images/logo.png" alt="Via Sul Suprimentos - Logo" />
+          </a>
+
+          <nav class="nav-desktop">
+            <a class="nav-link" href="#inicio" data-scroll="inicio">Início</a>
+            <a class="nav-link" href="#sobre" data-scroll="sobre">Sobre</a>
+            <a class="nav-link" href="#atuacao" data-scroll="atuacao">Atuação</a>
+            <a class="nav-link" href="vitrine.html">Vitrine</a>
+            <a class="nav-link" href="#contato" data-scroll="contato">Contato</a>
+            <a class="nav-cta" href="https://wa.me/5555999999999" target="_blank" rel="noopener noreferrer">Fale conosco</a>
+          </nav>
+
+          <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+            <svg id="iconMenu" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16" /><path d="M4 12h16" /><path d="M4 19h16" /></svg>
+            <svg id="iconClose" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>
+          </button>
+        </div>
+
+        <nav class="nav-mobile" id="navMobile">
+          <a class="nav-link" href="#inicio" data-scroll="inicio">Início</a>
+          <a class="nav-link" href="#sobre" data-scroll="sobre">Sobre</a>
+          <a class="nav-link" href="#atuacao" data-scroll="atuacao">Atuação</a>
+          <a class="nav-link" href="vitrine.html">Vitrine</a>
+          <a class="nav-link" href="#contato" data-scroll="contato">Contato</a>
+          <a class="nav-cta" href="https://wa.me/5555999999999" target="_blank" rel="noopener noreferrer">Fale conosco</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ Hero ============ -->
+      <section id="inicio" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="sr-only">Via Sul - Suprimentos Silk & Signs</h1>
+
+            <img src="images/logo-viasul.png" alt="Via Sul Suprimentos Silk & Signs" class="hero-logo" />
+
+            <h2 class="hero-subtitle">
+              Distribuidora de produtos para Serigrafia e Comunicação Visual.
+              Mais de 15 anos de excelência atendendo Santa Maria e todo o Rio Grande do Sul.
+            </h2>
+
+            <div class="hero-actions">
+              <a href="https://wa.me/5555999999999" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                Entre em contato
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+              </a>
+              <a href="#sobre" data-scroll="sobre" class="btn btn-outline">Conheça nossa história</a>
+              <a href="vitrine.html" class="btn btn-white">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 10a4 4 0 0 1-8 0" /><path d="M3.103 6.034h17.794" /><path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z" /></svg>
+                Ver Vitrine
+              </a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <div class="hero-stat-number">15+</div>
+                <div class="hero-stat-label">Anos de experiência</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-number">RS</div>
+                <div class="hero-stat-label">Todo o estado</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-number">32+</div>
+                <div class="hero-stat-label">Municípios atendidos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Sobre ============ -->
+      <section id="sobre" class="section">
+        <div class="section-bg"></div>
+        <div class="section-overlay"></div>
+
+        <div class="container section-inner">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Sobre nós</span>
+            <h2 class="section-title">Quem somos</h2>
+            <div class="section-divider"></div>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-image-wrap reveal">
+              <div class="about-image-frame">
+                <img src="images/about-image.jpg" alt="Processo de serigrafia - trabalho artesanal com telas e tintas" />
+              </div>
+              <div class="about-decor about-decor-1"></div>
+              <div class="about-decor about-decor-2"></div>
+            </div>
+
+            <div class="about-text reveal">
+              <p>
+                Somos uma empresa distribuidora de produtos para Serigrafia e Comunicação Visual,
+                com mais de 15 anos de atuação no mercado, atendendo Santa Maria e todo o estado
+                do Rio Grande do Sul.
+              </p>
+              <p>
+                Desde o início, construímos nossa trajetória com foco na excelência no atendimento
+                e na qualidade dos produtos, trabalhando com marcas reconhecidas e consolidadas nos
+                segmentos Silk e Signs. Já no primeiro ano de operação, alcançamos a marca de
+                atendimento em 32 municípios do interior do RS.
+              </p>
+              <p>
+                A empresa nasceu do sonho de contribuir ativamente para o desenvolvimento do setor
+                de Comunicação Visual e Serigrafia em Santa Maria e região. Mais do que comercializar
+                produtos, nosso propósito sempre foi oferecer suporte, orientação e parceria, ajudando
+                nossos clientes a evoluírem e fortalecerem seus negócios.
+              </p>
+            </div>
+          </div>
+
+          <div class="mv-grid">
+            <div class="mv-card reveal">
+              <h3>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg>
+                Missão
+              </h3>
+              <p>
+                Fornecer suprimentos para os segmentos de Comunicação Visual, Serigrafia e Cobertura,
+                garantindo soluções de qualidade aos nossos clientes. Atuar com segurança e credibilidade,
+                valorizando nossos colaboradores e construindo relações comerciais sólidas.
+              </p>
+            </div>
+            <div class="mv-card reveal">
+              <h3>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></svg>
+                Visão
+              </h3>
+              <p>
+                Ser reconhecida como a melhor empresa do interior do Rio Grande do Sul, destacando-se
+                pela excelência no atendimento, qualidade dos produtos e eficiência logística.
+              </p>
+            </div>
+          </div>
+
+          <div class="values-panel reveal">
+            <h3>Nossos valores</h3>
+            <div class="values-grid">
+              <div class="value-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" /></svg>
+                <p>Excelência no atendimento</p>
+              </div>
+              <div class="value-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg>
+                <p>Disciplina e responsabilidade</p>
+              </div>
+              <div class="value-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><path d="M16 3.128a4 4 0 0 1 0 7.744" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><circle cx="9" cy="7" r="4" /></svg>
+                <p>Respeito e espírito de equipe</p>
+              </div>
+              <div class="value-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></svg>
+                <p>Transparência nas relações</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Atuação ============ -->
+      <section id="atuacao" class="section">
+        <div class="section-bg"></div>
+        <div class="section-overlay"></div>
+
+        <div class="container section-inner">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Mercado de atuação</span>
+            <h2 class="section-title">Segmentos que atendemos</h2>
+            <div class="section-divider"></div>
+            <p class="section-lead">
+              Atuamos no mercado de Comunicação Visual e Serigrafia, oferecendo suprimentos e soluções
+              para profissionais, empresas e indústrias que buscam qualidade, confiabilidade e performance.
+            </p>
+          </div>
+
+          <div class="market-banner reveal">
+            <img src="images/market-image.jpg" alt="Ambiente de trabalho de comunicação visual com impressora e materiais coloridos" />
+            <div class="market-banner-overlay">
+              <div class="market-banner-text">
+                <h3>Soluções completas</h3>
+                <p>Tudo que você precisa para serigrafia e comunicação visual em um só lugar.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="promo-image reveal">
+            <img src="images/promo-loja-online.png" alt="Via Sul - Loja online com produtos para comunicação visual e serigrafia" loading="lazy" />
+          </div>
+
+          <div class="showcase-cta reveal">
+            <div class="showcase-cta-inner">
+              <div class="showcase-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 10a4 4 0 0 1-8 0" /><path d="M3.103 6.034h17.794" /><path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z" /></svg>
+              </div>
+              <div class="showcase-text">
+                <h3>Conheça nossa Vitrine</h3>
+                <p>
+                  Explore nosso catálogo completo de produtos para serigrafia e comunicação visual.
+                  Tintas, solventes, substratos e muito mais!
+                </p>
+              </div>
+              <a href="vitrine.html" class="btn btn-primary" style="padding: 1rem 2rem; font-size: 1.125rem; flex-shrink: 0;">
+                Acessar Vitrine
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="coverage-panel reveal">
+            <div class="coverage-heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
+              <h3>Área de cobertura</h3>
+            </div>
+            <p>
+              Nossa atuação abrange Santa Maria e todo o estado do Rio Grande do Sul,
+              com estrutura logística preparada para garantir agilidade, segurança e
+              eficiência nas entregas.
+            </p>
+          </div>
+
+          <div class="promo-image reveal" style="margin-top: 3rem; margin-bottom: 0;">
+            <img src="images/promo-entrega.png" alt="Via Sul - Entregamos em todo RS com os melhores preços" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Contato ============ -->
+      <section id="contato" class="section">
+        <div class="section-bg"></div>
+        <div class="section-overlay"></div>
+
+        <div class="container section-inner">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Contato</span>
+            <h2 class="section-title">Entre em contato</h2>
+            <div class="section-divider"></div>
+            <p class="section-lead">Estamos prontos para atender você com excelência. Entre em contato conosco!</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-card reveal">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>
+              </div>
+              <h3>Telefone</h3>
+              <p>Via Sul Suprimentos</p>
+            </div>
+            <div class="contact-card reveal">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg>
+              </div>
+              <h3>E-mail</h3>
+              <a href="mailto:financeiro@viasulsuprimentos.com.br">financeiro@viasulsuprimentos.com.br</a>
+            </div>
+            <div class="contact-card reveal">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
+              </div>
+              <h3>Endereço</h3>
+              <p>BR-287, 876 - Juscelino Kubitschek, Santa Maria - RS, 97030-285</p>
+            </div>
+            <div class="contact-card reveal">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>
+              </div>
+              <h3>Horário</h3>
+              <p>8h às 12h e 13h30 às 18h</p>
+            </div>
+          </div>
+
+          <div class="social-panel reveal">
+            <div>
+              <h3>Siga-nos nas redes sociais</h3>
+              <p>Acompanhe nossas novidades e lançamentos</p>
+            </div>
+            <a href="https://www.instagram.com/viasul_suprimentos" target="_blank" rel="noopener noreferrer" class="social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
+              @viasul_suprimentos
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <img src="images/logo.png" alt="Via Sul Suprimentos" class="footer-logo" />
+            <p>
+              Distribuidora de produtos para Serigrafia e Comunicação Visual com mais de
+              15 anos de experiência no Rio Grande do Sul.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">Navegação</h4>
+            <nav class="footer-nav">
+              <a href="#inicio" data-scroll="inicio">Início</a>
+              <a href="#sobre" data-scroll="sobre">Sobre</a>
+              <a href="#atuacao" data-scroll="atuacao">Atuação</a>
+              <a href="#contato" data-scroll="contato">Contato</a>
+            </nav>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">Contato</h4>
+            <div class="footer-contact">
+              <a href="mailto:financeiro@viasulsuprimentos.com.br">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg>
+                <span>financeiro@viasulsuprimentos.com.br</span>
+              </a>
+              <div class="footer-contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
+                <span>BR-287, 876 - Juscelino Kubitschek, Santa Maria - RS, 97030-285</span>
+              </div>
+              <a href="https://www.instagram.com/viasul_suprimentos" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
+                <span>@viasul_suprimentos</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; <span id="year">2026</span> Via Sul Suprimentos. Todos os direitos reservados.</p>
+          <p>CNPJ: 10.169.314/0001-76</p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="https://wa.me/5555999999999" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contato via WhatsApp">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
+    </a>
+
     <!-- Rodapé MonteSite - Atualização Automática -->
     <div id="montesite-footer-badge"></div>
     <script src="https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe"></script>
-    <script type="module" src="/src/main.tsx"></script>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
